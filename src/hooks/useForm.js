@@ -8,7 +8,7 @@ export const useForm = ( initForm = {} ) => {
         setFormState({
             ...formState,
             [ name ]: value
-        })
+        });
     };
 
     const onResetForm = () => {
