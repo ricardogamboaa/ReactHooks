@@ -18,7 +18,7 @@ describe('testing on <TodoApp / > component', () => {
         handleNewTodo: jest.fn(), 
         handleDeleteTodo: jest.fn(), 
         handleToggleTodo: jest.fn() 
-    })
+    });
 
 
     test('should show the component correctly', () => { 
