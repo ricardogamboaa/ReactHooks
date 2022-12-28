@@ -16,12 +16,12 @@ import { RouterProvider } from "react-router-dom";
 // import { CounterApp } from './01-useState/CounterApp'
 // import { HooksApp } from './HooksApp'
 
-import { getRoutes } from './Routes';
+import { Routes } from './Routes';
 
 import './index.css'
 
 
-const router = getRoutes();
+const router = Routes.getRoutes();
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

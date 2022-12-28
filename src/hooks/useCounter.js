@@ -5,16 +5,16 @@ export const useCounter = (initVal = 10) => {
     const [counter, setCounter] = useState( initVal );
     
 
-    const addCounter = () => {
-        setCounter( counter + 1 );
+    const addCounter = ( value = 1 ) => {
+        setCounter( (current) => current + value );
     }
 
     const resetCounter = () => {
         setCounter( initVal );
     }
 
-    const substractCounter = () => {
-        setCounter( counter - 1 )
+    const substractCounter = ( value = 1 ) => {
+        setCounter( (current) => current - value );
     }
 
     return {

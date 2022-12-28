@@ -18,7 +18,7 @@ export const MultipleCustomHooks = () => {
             <button 
                 className="btn btn-primary" 
                 disabled={ isLoading }
-                onClick={ addCounter }>
+                onClick={ () => { addCounter() } }>
                     Next Quote
             </button>
         </>
